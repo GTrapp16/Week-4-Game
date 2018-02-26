@@ -1,0 +1,19 @@
+body {
+    background-image: url("../images/background.jpg");
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    color: white;
+}
+
+#total {
+font-size: 20;
+
+}
+
