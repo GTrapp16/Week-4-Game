@@ -32,11 +32,10 @@ var restart = function () {
     total = Math.floor((Math.random() * 100) + 19);
     $('.total').empty();
     $('.total').append(total);
-
-    var kokiri = Math.floor((Math.random() * 12) + 1);
-    var goron = Math.floor((Math.random() * 12) + 1);
-    var zora = Math.floor((Math.random() * 12) + 1);
-    var ocarina = Math.floor((Math.random() * 12) + 1);
+    kokiri = Math.floor((Math.random() * 12) + 1);
+    goron = Math.floor((Math.random() * 12) + 1);
+    zora = Math.floor((Math.random() * 12) + 1);
+    ocarina = Math.floor((Math.random() * 12) + 1);
     additionDisplay();
 }
 
@@ -58,21 +57,21 @@ var winLose = function () {
 $('.total').append(total);
 $('.addition').append(addition);
 
-$(document).ready(function(){
-    $('#goron').click(function(){
-        addition=addition+goron;
+$(document).ready(function () {
+    $('#goron').click(function () {
+        addition = addition + goron;
         winLose();
     })
-    $('#zora').click(function(){
-        addition=addition+zora;
+    $('#zora').click(function () {
+        addition = addition + zora;
         winLose();
     })
-    $('#kokiri').click(function(){
-        addition=addition+kokiri;
+    $('#kokiri').click(function () {
+        addition = addition + kokiri;
         winLose();
     })
-    $('#ocarina').click(function(){
-        addition=addition+ocarina;
+    $('#ocarina').click(function () {
+        addition = addition + ocarina;
         winLose();
     })
 });
